@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 80px;
+    background: #000;
+    font-family: 'Poppins', sans-serif;
+}
+#cardMovie{
+    display: flex;
+    margin: 20px auto;
+    padding: 20px;
+    justify-content: center;
+    width: 90%;
+    height: fit-content;
+    background:  yellowgreen;
+}
+#detailsMovie::first-line {
+    color: blue;
+    font-size: 25px;
+    line-height: 1.5;
+}
+.containerCard{
+    width: 400px;
+    height: 400px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid blue;
+}
+.moviePoster{
+    padding: 10px;
+    width: 100%;
+    height: 270px;
+}
+.commingSoon{
+    width: 100%;
+    height: 80px;
+    background:  violet;
+}
+.navbar{
+    margin-top: -80px;
+    background: aqua;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+}
+.navbar ul{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+.navbar a{
+    text-decoration: none;
+}
+.navbar li{
+    list-style: none;
+    font-size: 25px;
+}
+footer a {
+    font-size: 15px;
+    border: 1px solid green;
+}
+footer{
+    display: inline-block;
+    margin-left: 44%;
+}
