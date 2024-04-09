@@ -32,11 +32,11 @@ const tempData = [
 ];
 const tempDataCommingSoon = [
   {
-    title: "",
+    title: "La razón de estar contigo",
     year: 2024,
-    director: "",
-    genero: [],
-    poster: "",
+    director: "Lasse Hallström",
+    genero: [ "Comedia dramática", "Familia"],
+    poster: "https://mx.web.img3.acsta.net/c_310_420/pictures/17/11/01/07/50/3949122.jpg",
   },
   {
     title: "",
