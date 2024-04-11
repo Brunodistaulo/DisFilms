@@ -7,44 +7,91 @@
 }
 body {
   padding-top: 80px;
-  background: #140f07;
   font-family: "Poppins", sans-serif;
+    /* background-image: url("https://pbs.twimg.com/media/GK1kgZmXkAAkE_R?format=jpg&name=large"); */
+  background: #1b1a1a;
 }
-.navbar {
+
+.navBarEncabezada{
   margin-top: -80px;
-  background: #20283b;
+  background-color: rgba(161, 14, 14, 0.5); 
   position: fixed;
   height: 80px;
   width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   z-index: 1000;
 }
-.navbar ul {
-  display: flex;
-  justify-content: space-around;
+.navBarEncabezada ul {
   height: 100%;
   align-items: center;
+  display: flex;
+  justify-content: space-around;
 }
 
-.navbar a {
+.navBarEncabezada a {
   text-decoration: none;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   color: #e7edf6;
 }
-#logotipo{
-    font-size: 40px;
+#logotipo {
+  font-size: 40px;
 }
 #logotipo h3 {
-    text-shadow: 0px 0px 20px white;
-    cursor: default;
+  text-shadow: 0px 0px 15px white;
+  cursor: default;
 }
-.navbar li {
+.navBarEncabezada li {
   list-style: none;
   font-size: 25px;
 }
-.navbar a:hover{
-    background: #536090;
-    border-radius: 10px;
-    padding: 15px;
+.navBarEncabezada a:hover {
+  background: #536090;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+
+#carouselExampleInterval {
+  margin: 0 auto;
+  width: 80%;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 1px 0px 20px white;
+}
+.editImg{
+  height: 500px;
+  object-fit: fill;
+  border-radius: 15px;
+  filter: grayscale(60%);
+}
+.carousel-caption{
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+
+}
+.carousel-inner p {
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  line-height: 1.7;
+}
+.carousel-inner h3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.carousel-control-next, .carousel-control-prev{
+  width: 5%;
+}
+#proximamente{
+  font-size: 30px;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  width: 90%;
+  color: #e7edf6;
+  border-bottom: 2px solid rgb(133, 4, 4);
 }
 #cardMovie {
   color: #e7edf6;
@@ -53,67 +100,68 @@ body {
   padding: 20px;
   width: 90%;
   height: fit-content;
-  border-top: 2px solid #536090;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
 }
-#detailsMovie::first-line {
-  color: blue;
-  font-size: 25px;
-  line-height: 1.5;
-}
-.containerCard {
-  width: 250px;
-  height: 400px;
+.cardDetails {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: #1f3d474f;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: #fff;
+  padding: 20px;
   display: flex;
-  line-height: 2;
   flex-direction: column;
-  align-items: center;
-  transition: all 0.5s;
+  justify-content: center;
+  transition: 1s;
 }
-.containerCard:hover {
-  transform: scale(1.02);
+.divTodo:hover .cardDetails {
+  right: 0;
 }
 #movieTitle {
-  text-align: left;
-  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  line-height: 1.2;
+  font-size: 30px;
+  font-weight: 500;
   color: #e7edf6;
+  text-decoration: none;
 }
-.movieYears{
-    display: inline-block;
-    width: 100%;
-    text-align: left;
+.divTodo {
+  width: 320px;
+  height: 480px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid rgb(126, 6, 6);
+  position: relative;
 }
-.movieDirector{
-    display: inline-block;
-    width: 100%;
-    text-align: left;
+.divTodo p {
+  width: 100%;
+  line-height: 1.8;
+  font-size: 19px;
+}
+.movieYears {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+.movieDirector {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
 }
 .moviePoster {
-  width: 250px;
-  height: 350px;
-  border-radius: 5%;
+  width: 320px;
+  height: 480px;
+  border-radius: 20px;
   object-fit: cover;
 }
-/* #commingSoon {
-  color: #e7edf6;
-  display: flex;
-  margin: 0 auto;
-  width: 90%;
-  height: fit-content;
-  border-top: 2px solid #536090;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-} */
 
-#proximamente {
-    margin-left: 5%;
-    font-size: 30px;
-    text-align: left;
-    color: #e7edf6;
-}
 footer a {
   margin-left: 5px;
   text-decoration: line-through;
@@ -126,5 +174,5 @@ footer {
   align-items: center;
   width: 100%;
   height: 40px;
-  background: #95a0ed;
+  background: #1469b3;
 }
