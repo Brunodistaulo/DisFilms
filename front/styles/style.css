@@ -6,21 +6,21 @@
   box-sizing: border-box;
 }
 body {
-  padding-top: 80px;
+  padding-top: 60px;
   font-family: "Poppins", sans-serif;
     /* background-image: url("https://pbs.twimg.com/media/GK1kgZmXkAAkE_R?format=jpg&name=large"); */
-  background: #1b1a1a;
+  background: #141414;
 }
 
 .navBarEncabezada{
-  margin-top: -80px;
-  background-color: rgba(161, 14, 14, 0.5); 
+  margin-top: -60px;
+  /* background-color: #141414; */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8),rgba(14, 14, 14, 0));
   position: fixed;
-  height: 80px;
+  height: 60px;
   width: 100%;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
   z-index: 1000;
+  
 }
 .navBarEncabezada ul {
   height: 100%;
@@ -31,11 +31,12 @@ body {
 
 .navBarEncabezada a {
   text-decoration: none;
+  height: 100%;
   transition: all 0.3s ease-in-out;
   color: #e7edf6;
 }
 #logotipo {
-  font-size: 40px;
+  font-size: 35px;
 }
 #logotipo h3 {
   text-shadow: 0px 0px 15px white;
@@ -43,26 +44,23 @@ body {
 }
 .navBarEncabezada li {
   list-style: none;
-  font-size: 25px;
+  font-size: 20px;
 }
 .navBarEncabezada a:hover {
-  background: #536090;
+  background: rgba(14, 14, 14, .6);
   border-radius: 10px;
-  padding: 15px;
+  padding: 10px;
 }
 
 
 #carouselExampleInterval {
-  margin: 0 auto;
-  width: 80%;
-  height: 500px;
-  border-radius: 20px;
-  box-shadow: 1px 0px 20px white;
+  margin-top: -80px;
+  width: 100%;
+  height: 565px;
 }
 .editImg{
-  height: 500px;
+  height: 565px;
   object-fit: fill;
-  border-radius: 15px;
   filter: grayscale(60%);
 }
 .carousel-caption{
@@ -81,17 +79,44 @@ body {
 }
 
 .carousel-control-next, .carousel-control-prev{
-  width: 5%;
+  width: 7%;
+}
+.mouse {
+  margin: 10px auto;
+  width: 25px;
+  height: 40px;
+  border: 2px solid #666666;
+  border-radius: 60px;
+  position: relative;
+  overflow: hidden;
+}
+.mouse::before{
+  content: '';
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  border-radius: 50%;
+  opacity: 1;
+  animation: wheel 1.3s infinite;
+}
+@keyframes wheel {
+  to {
+      opacity: 0;
+      top: 27px
+  }
 }
 #proximamente{
   font-size: 30px;
-  margin-top: 90px;
+  text-transform: uppercase;
+  margin-top: 250px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 20px;
   width: 90%;
   color: #e7edf6;
-  border-bottom: 2px solid rgb(133, 4, 4);
 }
 #cardMovie {
   color: #e7edf6;
@@ -100,15 +125,12 @@ body {
   padding: 20px;
   width: 90%;
   height: fit-content;
-  justify-content: space-around;
   flex-wrap: wrap;
-  align-items: center;
 }
 .cardDetails {
   width: 100%;
   height: 100%;
-  top: 0;
-  right: -100%;
+  top: -100%;
   position: absolute;
   background: #1f3d474f;
   backdrop-filter: blur(5px);
@@ -118,32 +140,32 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: 1s;
+  transition: 1.2s;
 }
 .divTodo:hover .cardDetails {
-  right: 0;
+  top: 0;
 }
 #movieTitle {
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   line-height: 1.2;
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 500;
   color: #e7edf6;
   text-decoration: none;
 }
 .divTodo {
-  width: 320px;
-  height: 480px;
+  margin: 10px 20px;
+  width: 250px;
+  height: 350px;
   border-radius: 20px;
   overflow: hidden;
-  border: 2px solid rgb(126, 6, 6);
   position: relative;
 }
 .divTodo p {
   width: 100%;
   line-height: 1.8;
-  font-size: 19px;
+  font-size: 12px;
 }
 .movieYears {
   display: inline-block;

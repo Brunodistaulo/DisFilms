@@ -1,4 +1,3 @@
-
 function convertirHTML(movie) {
     const { title, year, director, genre, rate, poster } = movie;
   
