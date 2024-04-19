@@ -126,10 +126,9 @@ body {
   width: 90%;
   height: fit-content;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .divTodo {
-  margin: 10px 0;
+  margin: 10px 20px;
   width: 250px;
   height: 350px;
   border-radius: 20px;
