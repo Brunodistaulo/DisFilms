@@ -1,6 +1,5 @@
 const moviesService = require("../services/moviesService");
 
-
 const movieController = async (req, res) => {
   try {
     const movies = await moviesService.getMovies();
@@ -9,5 +8,4 @@ const movieController = async (req, res) => {
     res.status(500).json({ error: "hiciste todo mal wachin" });
   }
 };
-
 module.exports = movieController;
