@@ -1,0 +1,132 @@
+body{
+    padding-top: 60px;
+    font-family: "Poppins", sans-serif;
+      /* background-image: url("https://pbs.twimg.com/media/GK1kgZmXkAAkE_R?format=jpg&name=large"); */
+    background: #141414;
+}
+.navBarEncabezada{
+    margin-top: -60px;
+    /* background-color: #141414; */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8),rgba(14, 14, 14, 0));
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    z-index: 1000;
+    
+  }
+  .navBarEncabezada ul {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navBarEncabezada a {
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    color: #e7edf6;
+  }
+  #logotipo {
+    font-size: 35px;
+  }
+  #logotipo h3 {
+    text-shadow: 0px 0px 15px white;
+    cursor: default;
+  }
+  .navBarEncabezada li {
+    list-style: none;
+    font-size: 20px;
+  }
+  .navBarEncabezada a:hover {
+    background: rgba(14, 14, 14, .6);
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+
+.card {
+    margin: 20px auto;
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #8b8a8a;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="url"],
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #8b8a8a;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="url"]:focus,
+input[type="submit"]:hover {
+    border-color: #555;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+.dropdown-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dropdown-checkbox label {
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#limpiar {
+    background-color: #f44336;
+    color: white;
+}
+
+#limpiar:hover {
+    background-color: #d32f2f;
+}
+
+#enviar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#enviar:hover {
+    background-color: #45a049;
+}

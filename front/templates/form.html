@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Película</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/formStyle.css">
+</head>
+<body>
+  <header>
+    <nav class="navBarEncabezada">
+      <ul>
+        <li id="logotipo">
+          <h3>PelisTaulo</h3>
+        </li>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="series.html">Series</a></li>
+        <li><a href="movies.html">Peliculas</a></li>
+        <li><a href="form.html">Agregar Películas</a></li>
+      </ul>
+  </header>
+<div class="card">
+    <form id="movieForm">
+        <label for="titulo">Título de la Película:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="duracion">Duración (minutos):</label>
+        <input type="number" id="duration" name="duration" required>
+
+        <label for="anio">Año de Estreno:</label>
+        <input type="number" id="year" name="year" required>
+
+        <label for="director">Director:</label>
+        <input type="text" id="director" name="director" required>
+
+        <div class="dropdown-checkbox">
+            <label>Géneros:</label>
+            <div class="dropdown-content">
+                <input type="checkbox" id="accion" name="genero" value="Acción">
+                <label for="accion">Acción</label>
+                <input type="checkbox" id="aventura" name="genero" value="Aventura">
+                <label for="aventura">Aventura</label>
+                <input type="checkbox" id="comedia" name="genero" value="Comedia">
+                <label for="comedia">Comedia</label>
+            </div>
+        </div>
+
+        <label for="rate">Rate:</label>
+        <input type="number" id="rate" name="rate" min="0" max="10" required>
+
+        <label for="imagen">URL de la Imagen:</label>
+        <input type="url" id="poster" name="poster" required>
+
+        <div class="buttons">
+            <button type="button" id="limpiar">Limpiar</button>
+            <button type="submit" id="enviar">Enviar</button>
+        </div>
+    </form>
+</div>
+
+<script src="../scripts/scriptForm.js"></script>
+</body>
+</html>

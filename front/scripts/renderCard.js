@@ -1,5 +1,5 @@
 function convertirHTML(movie) {
-    const { title, year, director, genre, rate, poster } = movie;
+    const { title, year, duration, director, genre,  rate, poster } = movie;
   
     const posterMovie = document.createElement("img");
     posterMovie.src = poster;
@@ -12,6 +12,10 @@ function convertirHTML(movie) {
     const yearMovie = document.createElement("p");
     yearMovie.textContent = `Año: ${year}`;
     yearMovie.classList.add("movieYears");
+
+    const durationMovie = document.createElement("p");
+    durationMovie.textContent = `Duración: ${duration} hs`;
+    durationMovie.classList.add("movieDuration");
   
     const dtMovie = document.createElement("p");
     dtMovie.innerHTML = `Director: ${director}`;
@@ -36,6 +40,7 @@ function convertirHTML(movie) {
     divTodo.appendChild(posterMovie);
     cardDetails.appendChild(titleMovie);
     cardDetails.appendChild(yearMovie);
+    cardDetails.appendChild(durationMovie);
     cardDetails.appendChild(dtMovie);
     cardDetails.appendChild(gnereMovie);
     cardDetails.appendChild(rateMovie);

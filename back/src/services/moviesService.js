@@ -9,4 +9,13 @@ module.exports = {
       console.log("diciendo un error");
     }
   },
+  createMovie: async (movieData) => {
+    try {
+      const newMovie = await Movie.create(movieData);
+      return newMovie;
+    } catch (error) {
+      console.error(error);
+      console.log("Error al crear la película");
+    }
+  },
 };
