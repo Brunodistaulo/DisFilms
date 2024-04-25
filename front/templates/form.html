@@ -23,42 +23,79 @@
 <div class="card">
     <form id="movieForm">
         <label for="titulo">Título de la Película:</label>
-        <input type="text" id="title" name="title" required>
+        <input type="text" id="title" name="title"  placeholder="Ej: El Padrino" required>
 
-        <label for="duracion">Duración (minutos):</label>
-        <input type="number" id="duration" name="duration" required>
+        <label for="duracion">Duración:</label>
+        <input type="text" id="duration" name="duration" placeholder="Ej: 2hs" required>
 
         <label for="anio">Año de Estreno:</label>
-        <input type="number" id="year" name="year" required>
+        <input type="number" id="year" name="year" placeholder="Ej: 1972" required>
 
         <label for="director">Director:</label>
-        <input type="text" id="director" name="director" required>
+        <input type="text" id="director" name="director" placeholder="Ej: Francis Ford Coppola" required>
 
         <div class="dropdown-checkbox">
             <label>Géneros:</label>
-            <div class="dropdown-content">
-                <input type="checkbox" id="accion" name="genero" value="Acción">
-                <label for="accion">Acción</label>
-                <input type="checkbox" id="aventura" name="genero" value="Aventura">
-                <label for="aventura">Aventura</label>
-                <input type="checkbox" id="comedia" name="genero" value="Comedia">
-                <label for="comedia">Comedia</label>
+            <div class="dropdown-content" id="genre">
+              <input type="checkbox" name="Acción" value="Acción">
+              <label for="accion">Acción</label>
+              
+              <input type="checkbox" name="Aventura" value="Aventura">
+              <label for="aventura">Aventura</label>
+              
+              <input type="checkbox" name="genero" value="Comedia">
+              <label for="comedia">Comedia</label>
+              
+              <input type="checkbox" name="genero" value="Drama">
+              <label for="drama">Drama</label>
+              
+              <input type="checkbox" name="genero" value="Ciencia ficción">
+              <label for="ciencia-ficcion">Ciencia ficción</label>
+              
+              <input type="checkbox" name="genero" value="Fantasía">
+              <label for="fantasia">Fantasía</label>
+              
+              <input type="checkbox" name="genero" value="Terror">
+              <label for="terror">Terror</label>
+              
+              <input type="checkbox" name="genero" value="Romance">
+              <label for="romance">Romance</label>
+              
+              <input type="checkbox" name="genero" value="Misterio">
+              <label for="misterio">Misterio</label>
+              
+              <input type="checkbox" name="genero" value="Thriller">
+              <label for="thriller">Thriller</label>
+              
+              <input type="checkbox" name="genero" value="Documental">
+              <label for="documental">Documental</label>
+              
+              <input type="checkbox" name="genero" value="Animación">
+              <label for="animacion">Animación</label>
+              
+              <input type="checkbox" name="genero" value="Musical">
+              <label for="musical">Musical</label>
+              
+              <input type="checkbox" name="genero" value="Western">
+              <label for="western">Western</label>
+              
             </div>
         </div>
 
         <label for="rate">Rate:</label>
-        <input type="number" id="rate" name="rate" min="0" max="10" required>
+        <input type="number" id="rate" name="rate" min="0" max="10" placeholder="Max: 10" required>
 
         <label for="imagen">URL de la Imagen:</label>
-        <input type="url" id="poster" name="poster" required>
+        <input type="url" id="poster" name="poster" placeholder="Ej: https://image.tmdb.org/t/p/w500" required>
 
         <div class="buttons">
             <button type="button" id="limpiar">Limpiar</button>
-            <button type="submit" id="enviar">Enviar</button>
+            <button type="submit" id="enviarBtn">Enviar</button>
         </div>
     </form>
 </div>
 
 <script src="../scripts/scriptForm.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>

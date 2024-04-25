@@ -14,7 +14,7 @@ function convertirHTML(movie) {
     yearMovie.classList.add("movieYears");
 
     const durationMovie = document.createElement("p");
-    durationMovie.textContent = `Duración: ${duration} hs`;
+    durationMovie.textContent = `Duración: ${duration}`;
     durationMovie.classList.add("movieDuration");
   
     const dtMovie = document.createElement("p");

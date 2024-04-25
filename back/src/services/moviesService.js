@@ -12,6 +12,7 @@ module.exports = {
   createMovie: async (movieData) => {
     try {
       const newMovie = await Movie.create(movieData);
+      console.log("la peli fue creada");
       return newMovie;
     } catch (error) {
       console.error(error);

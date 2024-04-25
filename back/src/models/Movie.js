@@ -10,6 +10,10 @@ const movieSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  duration: {
+    type: String,
+    required: true,
+  },
   director: {
     type: String,
     required: true,

@@ -13,7 +13,7 @@ const createMovie = async (req, res) => {
     try {
         const { title, duration, year, director, genre, rate, poster } = req.body;
 
-        // if (!title || !duration || !year || !director || !genres || !rate || !imageUrl) {
+        // if (!title || !duration || !year || !director || !genres || !rate || !poster) {
         //     return res.status(400).json({ message: "Faltan datos para crear la película" });
         // }
         const newMovie = await movieService.createMovie({ title, duration, year, director, genre, rate, poster });
