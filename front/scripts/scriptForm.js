@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   const enviarDatos = async (form) => {
     try {
-      const response = await axios.post("http://localhost:3000/movies", form);
+      const response = await axios.post("http://localhost:3001/movies", form);
       alert("Respuesta del servidor:", response.data);
     } catch (error) {
       alert("Error al enviar los datos:", error.message);
